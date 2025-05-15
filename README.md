@@ -105,7 +105,7 @@ O projeto utilizou diversas técnicas de estilização em CSS para aprimorar a e
 
 Você pode acessar o site publicado através do link abaixo:
 
-🔗 [Clique aqui para acessar o site](https://coloque-seu-link-da-vercel-aqui.vercel.app)
+🔗  https://vinharia-front1.vercel.app/
 
 ---
 
