@@ -8,7 +8,7 @@ nav.nav a:hover {
     animation-iteration-count: infinite;
 }
   
-@keyframes aparecer  {
+@keyframes aparecer {
     0% { opacity: 0 }
     100% { opacity: 1 }
 }
