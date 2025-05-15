@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-family: "Georgia", serif;
+  height: 100%;
+  overflow-x: hidden;
+  background-color: rgba(11, 5, 5, 0.94);
+  scroll-behavior: smooth;
+  color: white;
+}
+
+.hero {
+  position: relative;
+  min-height: 100vh;
+  background-image: url("../assets/imgs/imagem de vinho por do sol.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.hero__content {
+  position: relative;
+  z-index: 2;
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 1rem;
+}
+
+nav.nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+nav.nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  padding-bottom: 5px;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+nav.nav a:hover {
+  border-color: rgb(255, 255, 255);
+}
+
+h1 {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+  color: rgb(255, 248, 240);
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero__imagens {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+
+.hero__imagens img,
+.imgedict img {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 16px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.hero__imagens img:hover,
+.imgedict img:hover {
+  transform: scale(1.03);
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: rgb(58, 44, 44);
+  background-color: rgba(255, 255, 255, 0.8);
+  border-left: 5px solid rgb(128, 0, 32);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  padding: 1.5rem 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  backdrop-filter: blur(4px);
+}
+
+.fade-in-on-scroll {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 1.2s ease, transform 1.2s ease;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.linha-scroll {
+  width: 4px;
+  height: 0;
+  background-color: white;
+  transition: height 1.2s ease-out;
+}
+
+.linha-scroll.show {
+  height: 120px;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  nav.nav {
+    gap: 1rem;
+  }
+
+  p {
+    font-size: 1.1rem;
+    padding: 1rem;
+  }
+
+  .hero__imagens img,
+  .imgedict img {
+    max-width: 90%;
+  }
+}

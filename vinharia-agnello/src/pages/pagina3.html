@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../assets/imgs/pequena img de vinho.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style3.css  " />
+    <title>Catálogo de Vinhos </title>
+  </head>
+  <body>
+    <main class="hero">
+      <div class="overlay"></div>
+
+      <div class="hero__content">
+        <nav class="nav">
+            <a href="/index.html">Inicio</a>
+          <a href="pagina2.html">Conheça nossa história</a>
+          <a href="pagina4.html">Preparo do vinho</a>
+          <a href="pagina5.html">Contato</a>
+        </nav>
+
+        <h1>Nosso Catálogo de Vinhos</h1>
+        <h3>
+          Explore nossa seleção exclusiva de vinhos, curados com paixão e rigor. Descubra rótulos que contam histórias únicas.
+        </h3>
+
+        <div class="catalogo">
+          <div class="catalogo__item">
+            <img src="../assets/imgs/vinhoTinto.png" alt="Vinho Tinto Premium" />
+            <h4>Vinho Tinto Premium</h4>
+            <p>
+              Um vinho robusto, com notas de frutas vermelhas maduras e um leve toque de carvalho. Perfeito para acompanhamentos como carnes vermelhas e queijos curados.
+            </p>
+            <a href="src/pages/vinho1.html" class="btn">Ver Detalhes</a>
+          </div>
+
+          <div class="catalogo__item">
+            <img src="../assets/imgs/vinhoBrancoAgnello.png" alt="Vinho Branco Fresco" />
+            <h4>Vinho Branco Fresco</h4>
+            <p>
+              Um vinho leve e refrescante, ideal para tardes quentes e como acompanhamento de frutos do mar. Sua acidez equilibrada garante uma experiência única.
+            </p>
+            <a href="src/pages/vinho2.html" class="btn">Ver Detalhes</a>
+          </div>
+
+          <div class="catalogo__item">
+            <img src="../assets/imgs/1635deae-d996-4480-aa68-8ecf4452f8d8.png" alt="Vinho Rosé Elegante" />
+            <h4>Vinho Suave</h4>
+            <p>
+              Este vinho apresenta uma cor delicada e sabores frutados, perfeito para acompanhar pratos leves como saladas e peixes.
+            </p>
+            <a href="src/pages/vinho3.html" class="btn">Ver Detalhes</a>
+          </div>
+          <div class="catalogo__item">
+            <img src="../assets/imgs/ac02b83c-6b95-42b7-b6fc-d51479a33764.png" alt="Vinho Rosé Elegante" />
+            <h4>Vinho Rosé Elegante</h4>
+            <p>
+              Este vinho apresenta uma cor delicada e sabores frutados, perfeito para acompanhar pratos leves como saladas e peixes.
+            </p>
+            <a href="src/pages/vinho3.html" class="btn">Ver Detalhes</a>
+          </div>
+
+         
+
+        </div>
+       
+        <h5>FRETE GRÁTIS PARA TODO O BRASIL EM COMPRAS ACIMA DE R$249,00</h5>
+      
+      </div>
+    </main>
+
+    <!-- Não mexer, animação para aparecer os itens acima -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('show');
+            } else {
+              entry.target.classList.remove('show');
+            }
+          });
+        }, {
+          threshold: 0.4
+        });
+
+        const elements = document.querySelectorAll('.fade-in-on-scroll');
+        elements.forEach(el => observer.observe(el));
+      });
+    </script>
+  </body>
+</html>

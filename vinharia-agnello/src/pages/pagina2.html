@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../assets/imgs/pequena img de vinho.png" type="image/x-icon">
+Expandir
+message.txt
+5 KB
+﻿
+fevao
+fevao
+ 
+ 
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../assets/imgs/pequena img de vinho.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style2.css" />
+    <link rel="stylesheet" href="../css/efeitos.css">
+    <title>Vinheria Agnello</title>
+  </head>
+  <body>
+    <main class="hero">
+      <div class="overlay"></div>
+
+      <div class="hero__content">
+        <header>
+          <nav class="nav">
+            <a href="/index.html">Início</a>
+            <a href="pagina3.html">Catálogo de vinhos</a>
+            <a href="pagina4.html">Preparo do vinho</a>
+            <a href="pagina5.html">Contato</a>
+          </nav>
+        </header>
+
+        <h1>Conheça nossa História</h1>
+
+        <section class="hero__imagens">
+          <div class="fade-in-on-scroll">
+            <img class="transformacao1"
+              src="../assets/imgs/imagem historia.png"
+              alt="imagem de vinho"
+            />
+          </div>
+
+          <p class="fade-in-on-scroll">
+            Tudo começou com um sonho simples, mas profundo: o desejo de criar
+            algo único, algo que unisse tradição, paixão e sabor. A história da
+            Vinheria Agnello começa com a família Agnello, cujos membros sempre
+            tiveram uma ligação especial com o mundo do vinho.
+          </p>
+
+          <div class="linha-scroll fade-in-on-scroll"></div>
+          <div class="imgedict fade-in-on-scroll">
+            <img class="transformacao2"
+              src="../assets/imgs/historia 2.png"
+              alt="imagem do casal segurando vinho"
+            />
+          </div>
+
+          <p class="fade-in-on-scroll">
+            Em 2015, com muito amor e dedicação, plantaram as primeiras videiras
+            em nossa pequena propriedade no interior de São Paulo, onde o clima
+            e o solo se mostraram perfeitos para cultivar variedades de uvas
+            selecionadas. Cada vinhedo é cuidado com carinho, respeitando a
+            natureza e o processo de produção artesanal.
+          </p>
+          <div class="linha-scroll fade-in-on-scroll"></div>
+
+          <div class="fade-in-on-scroll">
+            <img src="../assets/imgs/historia 3.png" alt="imagem de vinho" />
+          </div>
+          <p class="fade-in-on-scroll">
+            Desde o início, nossa filosofia foi clara: "Mais do que vender
+            vinhos, entregamos histórias engarrafadas." A cada garrafa que sai
+            da nossa vinheria, carregamos o compromisso de oferecer aos nossos
+            clientes uma verdadeira experiência sensorial, onde o paladar se
+            encontra com a memória, a cultura e o prazer.
+          </p>
+          <div class="linha-scroll fade-in-on-scroll"></div>
+          <div class="fade-in-on-scroll">
+            <img src="../assets/imgs/historia 5.png" alt="imagem de vinho final" />
+          </div>
+          <p class="fade-in-on-scroll">
+            Hoje, a Vinheria Agnello é um ponto de encontro para todos que
+            buscam a excelência e o prazer de uma boa taça de vinho. Com um
+            portfólio de rótulos premiados e exclusivos, continuamos a nossa
+            jornada de contar histórias através de nossos vinhos, valorizando as
+            tradições e inovando com cada nova safra. E assim, a história da
+            Vinheria Agnello é contada, taça a taça, em cada brinde que
+            celebramos com nossos clientes, amigos e parceiros. Porque para nós,
+            vinho não é apenas uma bebida, é uma memória, é cultura, é prazer.
+          </p>
+        </section>
+      </div>
+    </main>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("show");
+              } else {
+                entry.target.classList.remove("show");
+              }
+            });
+          },
+          {
+            threshold: 0.4,
+          }
+        );
+
+        const elements = document.querySelectorAll(".fade-in-on-scroll");
+        elements.forEach((el) => observer.observe(el));
+      });
+    </script>
+  </body>
+</html>

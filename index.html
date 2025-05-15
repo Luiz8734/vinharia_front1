@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./vinharia-agnello/src/assets/imgs/pequena img de vinho.png" type="image/x-icon">
+    <link rel="stylesheet" href="./vinharia-agnello/src/css/style.css" />
+    <link rel="stylesheet" href="vinharia-agnello/src/css/efeitos.css">
+    <title>Vinheria Agnello</title>
+  </head>
+  <body>
+    <main class="hero">
+      <div class="overlay"></div>
+
+      <div class="hero__content">
+        <header>
+          <nav class="nav">
+            <a href="/vinharia-agnello/src/pages/pagina2.html">Conheça nossa história</a>
+            <a href="/vinharia-agnello/src/pages/pagina3.html">Catálogo de vinhos</a>
+            <a href="/vinharia-agnello/src/pages/pagina4.html">Preparo do vinho</a>
+            <a href="/vinharia-agnello/src/pages/pagina5.html">Contato</a>
+          </nav>
+        </header>
+          <h1>Bem-vindo à Vinheria Agnello</h1>
+        <h3>
+          Na Agnello, cada garrafa conta uma história. Selecionamos rótulos
+          exclusivos das melhores regiões vinícolas do mundo. Seja para um
+          jantar especial ou para o prazer de degustar — aqui é vinho de
+          verdade.
+        </h3>
+        <h5 class="animacao1">FRETE GRÁTIS PARA TODO O BRASIL EM COMPRAS ACIMA DE R$249,00</h5>
+        <section class="hero__imagens fade-in-on-scroll">
+          <img src="vinharia-agnello/src/assets/imgs/vinho 2.png" alt="imagem de vinho" />
+          <p class="linha">
+            Na Agnello, cada garrafa é uma viagem. Selecionamos vinhos com
+            alma, vindos das regiões vinícolas mais renomadas do mundo — da
+            tradição dos vinhedos europeus aos novos sabores das Américas e
+            Oceania. Nossa curadoria é feita para quem valoriza experiências:
+            seja em um jantar a dois, uma celebração especial ou naquele
+            momento só seu no fim do dia. Mais do que vender vinhos,
+            entregamos histórias engarrafadas, cheias de sabor, origem e
+            identidade. Porque na Agnello, vinho é memória, é cultura, é
+            prazer. (Se quiser avaliar seu vinho <a class="pseudo" href="https://www.vivino.com/wine-news/como-encontrar-o-melhor-vinho-para-qualquer-ocasiao?srsltid=AfmBOop8HSMChamI-NSwL6kbDAq13ZghFIMYojyH9pRJ6pddupbDfEJ-">Clique aqui</a>)
+          </p>
+        </section>
+      </div>
+    </main>
+
+    <!-- Não mexer, animação para aparecer os itens acima -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('show');
+            } else {
+              entry.target.classList.remove('show');
+            }
+          });
+        }, {
+          threshold: 0.4
+        });
+
+        const elements = document.querySelectorAll('.fade-in-on-scroll');
+        elements.forEach(el => observer.observe(el));
+      });
+    </script>
+  </body>
+</html>

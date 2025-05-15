@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-family: "Georgia", serif;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background-color: rgba(11, 5, 5, 0.94);
+}
+
+.hero {
+  position: relative;
+  height: 100vh;
+  background-image: url("../assets/imgs/imagem\ de\ vinho\ por\ do\ sol.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  color: white;
+  text-align: center;
+  background-attachment: fixed;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.511);
+  z-index: 1;
+}
+
+.hero__content {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+}
+
+nav.nav {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+  top: 23rem;
+  gap: 1rem;
+}
+
+nav.nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-bottom: 2px solid transparent;
+  transition: 0.3s;
+}
+
+nav.nav a:hover {
+  border-bottom: 2px solid #fff;
+}
+
+h1 {
+  position: relative;
+  right: 18rem;
+  top: 32rem;
+  font-size: 4rem;
+  margin-bottom: 2rem;
+  color: rgb(255, 248, 240);
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+h3 {
+  position: relative;
+  right: 18rem;
+  top: 34rem;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+  color: rgb(255, 248, 240);
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+h5 {
+  position: relative;
+  right: 18rem;
+  top: 34rem;
+  font-size: 1rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: inline-block;
+  padding: 0.5rem 0.5rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  color: rgb(255, 248, 240);
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero__imagens {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  position: relative;
+  top: 50rem;
+  left: 20rem;
+}
+
+.hero__imagens img {
+  position: relative;
+  top: 8rem;
+  left: 5rem;
+  width: 25rem;
+  border-radius: 12px;
+  transition: transform 0.3s;
+}
+
+p {
+  font-family: "Georgia", serif;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #3a2c2c;
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem 2rem;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-left: 5px solid #800020;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  position: relative;
+  right: 40rem;
+  top: -15rem;
+}
+.fade-in-on-scroll {
+  opacity: 0;                        
+  transform: translateY(40px);        
+  transition: opacity 1s ease, transform 1s ease; 
+}
+
+.show {
+  opacity: 1;                          
+  transform: translateY(0);            
+}
